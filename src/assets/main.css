@@ -1,0 +1,141 @@
+:root {
+  --color-primary: #3979f6;
+  --color-success: #22b573;
+  --color-danger: #ee3158;
+  --color-warning: #ffc21d;
+  --color-info: #35b8e0;
+  --color-gray: #b4bdcd;
+  --color-text: #5b6470;
+  --color-text-dark: #2b3245;
+  --color-bg: #f3f5fa;
+  --color-surface: #ffffff;
+  --color-border: #eef1f7;
+  --color-nav-active-bg: #f5f8ff;
+  --page-bg: var(--color-bg);
+  --radius-md: 10px;
+}
+
+/* Color-skin themes (matches the Light Blue template's Settings panel) */
+html[data-theme="dark"] {
+  --page-bg: linear-gradient(136.36deg, #333964 4.86%, #171a39 94.85%);
+  --color-surface: rgba(0, 0, 0, 0.24);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="light"] {
+  --page-bg: radial-gradient(farthest-side ellipse at 10% 0, #333867 20%, #17193b);
+  --color-surface: rgba(0, 0, 0, 0.24);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="sea"] {
+  --page-bg: radial-gradient(farthest-side ellipse at 10% 0, #0a0417 20%, #0d1635);
+  --color-surface: linear-gradient(135deg, #222231 0%, rgba(34, 33, 52, 0.78) 100%);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: #222230;
+}
+html[data-theme="sky"] {
+  --page-bg: radial-gradient(farthest-side ellipse at 10% 0, #0a0417 20%, #0d1635);
+  --color-surface: linear-gradient(135deg, #4b4e5f 0%, rgba(38, 40, 55, 0.87) 100%);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: #25307e;
+}
+html[data-theme="rain"] {
+  --page-bg: radial-gradient(farthest-side ellipse at 10% 0, #3846aa 20%, #0b0d2c);
+  --color-surface: linear-gradient(135deg, rgba(101, 114, 207, 0.63) 0%, rgba(32, 38, 82, 0) 100%);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: rgba(41, 85, 142, 0.5);
+}
+html[data-theme="middle"] {
+  --page-bg: linear-gradient(136.36deg, #3390c4 4.86%, #1d1252 94.85%);
+  --color-surface: linear-gradient(172.98deg, rgba(255, 255, 255, 0.08) 1.49%, rgba(255, 255, 255, 0.0208) 99.64%);
+  --color-bg: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: rgba(244, 244, 245, 0.6);
+  --color-text-dark: #f4f4f5;
+  --color-nav-active-bg: rgba(41, 85, 142, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: var(--page-bg);
+  color: var(--color-text);
+  font-size: 14px;
+  transition: background 0.25s ease;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout grid utilities shared across views */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.col {
+  padding: 0 12px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+.col-4-offset {
+  width: 33.33%;
+  margin-left: 8.33%;
+}
+.col-3rd {
+  width: 33.333%;
+}
+.col-4th {
+  width: 25%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-8 {
+  width: 66.667%;
+}
+
+@media (max-width: 1100px) {
+  .col-7,
+  .col-4-offset,
+  .col-3rd,
+  .col-4th,
+  .col-6,
+  .col-8 {
+    width: 100%;
+    margin-left: 0;
+  }
+}

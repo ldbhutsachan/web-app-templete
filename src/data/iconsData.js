@@ -1,0 +1,48 @@
+export const iconCategories = [
+  {
+    key: "solid",
+    label: "Solid",
+    prefix: "fa-solid",
+    icons: [
+      "fa-house", "fa-user", "fa-users", "fa-gear", "fa-bell", "fa-envelope", "fa-magnifying-glass",
+      "fa-heart", "fa-star", "fa-check", "fa-xmark", "fa-plus", "fa-minus", "fa-arrow-right", "fa-arrow-left",
+      "fa-arrow-up", "fa-arrow-down", "fa-chevron-down", "fa-chevron-up", "fa-table", "fa-chart-line",
+      "fa-calendar", "fa-clock", "fa-location-dot", "fa-gem", "fa-book", "fa-bookmark", "fa-camera",
+      "fa-print", "fa-lock", "fa-lock-open", "fa-cloud", "fa-cloud-arrow-up", "fa-cloud-arrow-down",
+      "fa-download", "fa-upload", "fa-trash", "fa-pen", "fa-pencil", "fa-tag", "fa-tags", "fa-flag",
+      "fa-cart-shopping", "fa-credit-card", "fa-wallet", "fa-gift", "fa-truck", "fa-box", "fa-inbox",
+      "fa-paper-plane", "fa-comment", "fa-comments", "fa-thumbs-up", "fa-thumbs-down", "fa-share",
+      "fa-link", "fa-paperclip", "fa-filter", "fa-sliders", "fa-list", "fa-grip", "fa-th-large",
+      "fa-wifi", "fa-signal", "fa-battery-full", "fa-volume-high", "fa-volume-xmark", "fa-microphone",
+      "fa-video", "fa-image", "fa-file", "fa-folder", "fa-folder-open", "fa-globe", "fa-map",
+      "fa-compass", "fa-rocket", "fa-bolt", "fa-fire", "fa-sun", "fa-moon", "fa-cloud-sun",
+      "fa-cloud-rain", "fa-wind", "fa-umbrella", "fa-key", "fa-shield", "fa-shield-halved", "fa-bug",
+      "fa-code", "fa-terminal", "fa-database", "fa-server", "fa-microchip", "fa-laptop", "fa-mobile",
+      "fa-print", "fa-power-off", "fa-right-from-bracket", "fa-right-to-bracket",
+    ],
+  },
+  {
+    key: "regular",
+    label: "Regular",
+    prefix: "fa-regular",
+    icons: [
+      "fa-user", "fa-heart", "fa-star", "fa-bell", "fa-envelope", "fa-comment", "fa-comments",
+      "fa-calendar", "fa-clock", "fa-bookmark", "fa-file", "fa-folder", "fa-image", "fa-copy",
+      "fa-paste", "fa-trash-can", "fa-circle", "fa-square", "fa-circle-check", "fa-circle-xmark",
+      "fa-thumbs-up", "fa-thumbs-down", "fa-lightbulb", "fa-flag", "fa-map",
+      "fa-face-smile", "fa-face-frown", "fa-eye", "fa-eye-slash", "fa-hand", "fa-compass",
+    ],
+  },
+  {
+    key: "brands",
+    label: "Brand",
+    prefix: "fa-brands",
+    icons: [
+      "fa-facebook", "fa-twitter", "fa-instagram", "fa-linkedin", "fa-github", "fa-google",
+      "fa-apple", "fa-android", "fa-windows", "fa-youtube", "fa-vimeo", "fa-pinterest",
+      "fa-slack", "fa-discord", "fa-figma", "fa-vuejs", "fa-react", "fa-node-js", "fa-npm",
+      "fa-docker", "fa-aws", "fa-stripe", "fa-paypal", "fa-shopify", "fa-wordpress",
+      "fa-telegram", "fa-whatsapp", "fa-tiktok", "fa-reddit", "fa-spotify",
+    ],
+  },
+];
